@@ -34,7 +34,7 @@ pip install h5py
 python3 generate_image_crops.py --max_images 999999 --mode rs19 --input_path /path/to/datasets/rs19_val --output_path /path/to/datasets/Railsem19Croppedv1
 
 # Convert dataset to hdf5
-python3 railsem19cropped2hdf5 --input_path /path/to/datasets/Railsem19Croppedv1 --output_name Railsem19Croppedv1
+python3 railsem19cropped2hdf5.py --input_path /path/to/datasets/Railsem19Croppedv1 --output_name Railsem19Croppedv1
 ```
 
 ### Create FishyrailsCroppedv1
@@ -43,7 +43,7 @@ python3 railsem19cropped2hdf5 --input_path /path/to/datasets/Railsem19Croppedv1 
 python3 fishyrails.py --max_images 1000 --max_obstacles 2000 --output_path /path/to/datasets/Fishyrailsv1 --input_path_rs19 /path/to/datasets/rs19_val --input_path_voc /path/to/datasets/VOC2012
 
 # Generate region of interest crops
-python3 generate_image_crops --max_images 999999 --mode fishyrails --input_path /path/to/datasets/Fishyrailsv1 --output_path /path/to/datasets/FishyrailsCroppedv1
+python3 generate_image_crops.py --max_images 999999 --mode fishyrails --input_path /path/to/datasets/Fishyrailsv1 --output_path /path/to/datasets/FishyrailsCroppedv1
 
 # Convert dataset to hdf5
 python3 fishyrailscropped2hdf5.py --input_path /path/to/datasets/FishyrailsCroppedv1 --output_name FishyrailsCroppedv1
